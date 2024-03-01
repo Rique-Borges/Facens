@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://65e1298ed3db23f7624a7b7a.mockapi.io/api/v1/usuario" method="post">
+      <fieldset>
+        <legend>Cadastro de Henrique</legend>
+        <div>
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" name="nome" required />
+        </div>
+        <div>
+          <label for="cpf">CPF</label>
+          <input id="cpf" type="text" name="cpf" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+        <div>
+          <label for="datanascimento">Data de Nascimento</label>
+          <input
+            id="datanascimento"
+            type="date"
+            name="datanascimento"
+            required
+          />
+        </div>
+        <div>
+          <label for="altura">Altura</label>
+          <input
+            id="altura"
+            type="number"
+            step="0.01"
+            min="0"
+            max="3"
+            name="altura"
+          />
+        </div>
+        <div>
+          <label for="documento">Carregue o Documento</label>
+          <input id="documento" type="file" name="documento" />
+        </div>
+        <div>
+          <label>Gosto Musical</label>
+          <label>
+            <input type="checkbox" name="gostoMusical" value="pagode" /> Pagode
+          </label>
+          <label>
+            <input type="checkbox" name="gostoMusical" value="rockCristao" />
+            Rock Cristão
+          </label>
+          <label>
+            <input type="checkbox" name="gostoMusical" value="postGrunge" />
+            Post-Grunge
+          </label>
+        </div>
+        <div>
+          <label>Sexo</label>
+          <label
+            ><input
+              name="sexo"
+              value="masculino"
+              type="radio"
+            />Masculino</label
+          >
+          <label
+            ><input name="sexo" value="feminino" type="radio" />Feminino
+          </label>
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <select id="cidade" name="cidade">
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio De Janeiro">Rio De Janeiro</option>
+            <option value="Belo Horizonte">Belo Horizonte</option>
+          </select>
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input list="estado" name="estado"/>
+          <datalist id="estado">
+            <option value="São Paulo"></option>
+            <option value="Rio De Janeiro"></option>
+            <option value="Minas Gerais"></option>
+            <option value="Rio Grande Do Sul"></option>
+          </datalist>
+        </div>
+
+        <div>
+          <button type="submit">Salvar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </fieldset>
+    </form>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e9AdYrVqK1g?si=6_LtNiYzFrUsJbVJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+</body>
+</html>
