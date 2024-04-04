@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário de Inscrição</title>
-    <!-- Adicionando Bootstrap CSS -->
+    <title>Formulário de Inscrição </title>
+
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,12 +12,10 @@
   </head>
   <body>
     <div class="container">
-      <form
-        action="https://65e1298ed3db23f7624a7b7a.mockapi.io/api/v1/usuario"
-        method="post"
-      >
+      <form action="https://660efe3c356b87a55c50a3c0.mockapi.io/usuario/usuario" method="post">
+       <fieldset>
         <h2>Inscreva-se no Curso</h2>
-        <!-- Campos do Aluno -->
+
         <div class="form-group">
           <label for="nome_aluno">Nome do Aluno *</label>
           <input
@@ -94,7 +92,7 @@
         <div class="form-row">
             <div class="form-group">
                 <label for="estado_aluno">Estado *</label>
-                <select id="estado_aluno" name="estado_aluno" class="form-control" required>
+                <select type="text" id="estado_aluno" name="estado_aluno" class="form-control" required>
                   <option value="">Selecione...</option>
                   <option value="AC">Acre</option>
                   <option value="AL">Alagoas</option>
@@ -128,7 +126,7 @@
           <div class="form-group col-md-6">
             <label for="telefone_aluno">Telefone</label>
             <input
-              type="tel"
+              type="text"
               class="form-control"
               id="telefone_aluno"
               name="telefone_aluno"
@@ -139,7 +137,7 @@
         <div class="form-group">
           <label for="celular_aluno">Celular *</label>
           <input
-            type="tel"
+            type="text"
             class="form-control"
             id="celular_aluno"
             name="celular_aluno"
@@ -169,7 +167,7 @@
           </select>
         </div>
 
-        <!-- Campos do Pai -->
+
         <div class="form-group">
           <h3>Dados do Pai</h3>
           <label for="nome_pai">Nome do Pai *</label>
@@ -268,7 +266,7 @@
           >
         </div>
 
-        <!-- Campos da Mãe -->
+
         <div class="form-group">
           <h3>Dados da Mãe</h3>
           <label for="nome_mae">Nome da Mãe *</label>
@@ -367,9 +365,6 @@
           >
         </div>
 
-        <!-- Repita a mesma estrutura para os campos do pai e da mãe -->
-
-        <!-- Campos do Curso -->
         <div class="form-group">
             <h3>Dados do Curso</h3>
             <label for="curso_escolhido">Escolha o Curso *</label>
@@ -404,14 +399,27 @@
 <div class="form-group">
     <label for="quantidade_parcelas">Quantidade de Parcelas</label>
     <select class="form-control" id="quantidade_parcelas" name="quantidade_parcelas">
-        <option value="1">1x</option>
+        <option value="1">1x</optionoption>
         <option value="2">2x</option>
         <option value="3">3x</option>
         <option value="6">6x</option>
         <option value="12">12x</option>
 
     </select>
+  </div>
+  <div class="form-group">
+    <button type="submit">Enviar</button>
 </div>
+</fieldset>
+</form>
+</div>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+      <span class="text-muted">Colégio Tela e Trote</span>
+  </div>
+</footer>
+
 <script>
     document.getElementById('curso_escolhido').addEventListener('change', function() {
         var curso = this.value;
@@ -439,7 +447,6 @@
         valor_curso_input.value = valor_curso;
     });
 </script>
-    <!-- Adicionando Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
