@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Inscrição</title>
+    <!-- Adicionando Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://65e1298ed3db23f7624a7b7a.mockapi.io/api/v1/usuario"
+        method="post"
+      >
+        <h2>Inscreva-se no Curso</h2>
+        <!-- Campos do Aluno -->
+        <div class="form-group">
+          <label for="nome_aluno">Nome do Aluno *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nome_aluno"
+            name="nome_aluno"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="endereco_aluno">Endereço *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="endereco_aluno"
+            name="endereco_aluno"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="bairro_aluno">Bairro</label>
+          <input
+            type="text"
+            class="form-control"
+            id="bairro_aluno"
+            name="bairro_aluno"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="cidade_aluno">Cidade *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cidade_aluno"
+              name="cidade_aluno"
+              required
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="numero_aluno">Número</label>
+            <input
+              type="text"
+              class="form-control"
+              id="numero_aluno"
+              name="numero_aluno"
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="cep_aluno">CEP</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cep_aluno"
+              name="cep_aluno"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="complemento_aluno">Complemento</label>
+          <input
+            type="text"
+            class="form-control"
+            id="complemento_aluno"
+            name="complemento_aluno"
+          />
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="estado_aluno">Estado *</label>
+                <select id="estado_aluno" name="estado_aluno" class="form-control" required>
+                  <option value="">Selecione...</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+              </div>
+          <div class="form-group col-md-6">
+            <label for="telefone_aluno">Telefone</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telefone_aluno"
+              name="telefone_aluno"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="celular_aluno">Celular *</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="celular_aluno"
+            name="celular_aluno"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email_aluno">E-mail *</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email_aluno"
+            name="email_aluno"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="cor_aluno">Cor *</label>
+          <select class="form-control" id="cor_aluno" name="cor_aluno" required>
+            <option value="Branca">Branca</option>
+            <option value="Preta">Preta</option>
+            <option value="Parda">Parda</option>
+            <option value="Amarela">Amarela</option>
+            <option value="Indígena">Indígena</option>
+          </select>
+        </div>
+
+        <!-- Campos do Pai -->
+        <div class="form-group">
+          <h3>Dados do Pai</h3>
+          <label for="nome_pai">Nome do Pai *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nome_pai"
+            name="nome_pai"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="data_nascimento_pai">Data de Nascimento</label>
+            <input
+              type="date"
+              class="form-control"
+              id="data_nascimento_pai"
+              name="data_nascimento_pai"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="naturalidade_pai">Naturalidade</label>
+            <input
+              type="text"
+              class="form-control"
+              id="naturalidade_pai"
+              name="naturalidade_pai"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="instrucao_pai">Instrução</label>
+          <input
+            type="text"
+            class="form-control"
+            id="instrucao_pai"
+            name="instrucao_pai"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="profissao_pai">Profissão</label>
+          <input
+            type="text"
+            class="form-control"
+            id="profissao_pai"
+            name="profissao_pai"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="celular_pai">Celular *</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="celular_pai"
+            name="celular_pai"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email_pai">E-mail *</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email_pai"
+            name="email_pai"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="cpf_pai">CPF *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cpf_pai"
+            name="cpf_pai"
+            required
+          />
+        </div>
+
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="responsavel_financeiro_pai"
+            name="responsavel_financeiro_pai"
+          />
+          <label class="form-check-label" for="responsavel_financeiro_pai"
+            >Responsável Financeiro</label
+          >
+        </div>
+
+        <!-- Campos da Mãe -->
+        <div class="form-group">
+          <h3>Dados da Mãe</h3>
+          <label for="nome_mae">Nome da Mãe *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nome_mae"
+            name="nome_mae"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="data_nascimento_mae">Data de Nascimento</label>
+            <input
+              type="date"
+              class="form-control"
+              id="data_nascimento_mae"
+              name="data_nascimento_mae"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="naturalidade_mae">Naturalidade</label>
+            <input
+              type="text"
+              class="form-control"
+              id="naturalidade_mae"
+              name="naturalidade_mae"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="instrucao_mae">Instrução</label>
+          <input
+            type="text"
+            class="form-control"
+            id="instrucao_mae"
+            name="instrucao_mae"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="profissao_mae">Profissão</label>
+          <input
+            type="text"
+            class="form-control"
+            id="profissao_mae"
+            name="profissao_mae"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="celular_mae">Celular *</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="celular_mae"
+            name="celular_mae"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email_mae">E-mail *</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email_mae"
+            name="email_mae"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="cpf_mae">CPF *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cpf_mae"
+            name="cpf_mae"
+            required
+          />
+        </div>
+
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="responsavel_financeiro_mae"
+            name="responsavel_financeiro_mae"
+          />
+          <label class="form-check-label" for="responsavel_financeiro_mae"
+            >Responsável Financeiro</label
+          >
+        </div>
+
+        <!-- Repita a mesma estrutura para os campos do pai e da mãe -->
+
+        <!-- Campos do Curso -->
+        <div class="form-group">
+            <h3>Dados do Curso</h3>
+            <label for="curso_escolhido">Escolha o Curso *</label>
+            <select class="form-control" id="curso_escolhido" name="curso_escolhido" required>
+                <option value="">Selecione o Curso</option>
+                <option value="pintura">Curso de Pintura</option>
+                <option value="musica">Curso de Música</option>
+                <option value="teatro">Curso de Teatro</option>
+                <option value="programacao">Curso de Programação Básica</option>
+            </select>
+        </div>
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="data_ingresso">Data de Ingresso *</label>
+        <input type="date" class="form-control" id="data_ingresso" name="data_ingresso" required>
+    </div>
+    <div class="form-group">
+        <label for="valor_curso">Valor *</label>
+        <input type="text" class="form-control" id="valor_curso" name="valor_curso" readonly required>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="forma_pagamento">Forma de Pagamento *</label>
+    <select class="form-control" id="forma_pagamento" name="forma_pagamento" required>
+        <option value="Crédito">Crédito</option>
+        <option value="Débito">Débito</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="quantidade_parcelas">Quantidade de Parcelas</label>
+    <select class="form-control" id="quantidade_parcelas" name="quantidade_parcelas">
+        <option value="1">1x</option>
+        <option value="2">2x</option>
+        <option value="3">3x</option>
+        <option value="6">6x</option>
+        <option value="12">12x</option>
+
+    </select>
+</div>
+<script>
+    document.getElementById('curso_escolhido').addEventListener('change', function() {
+        var curso = this.value;
+        var valor_curso_input = document.getElementById('valor_curso');
+
+        // Defina os valores dos cursos
+        var valor_curso;
+        switch (curso) {
+            case 'pintura':
+                valor_curso = "200,00";
+                break;
+            case 'musica':
+                valor_curso = "150,00";
+                break;
+            case 'teatro':
+                valor_curso = "180,00";
+                break;
+            case 'programacao':
+                valor_curso = "180,00";
+                break;
+            default:
+                valor_curso = "";
+        }
+
+        valor_curso_input.value = valor_curso;
+    });
+</script>
+    <!-- Adicionando Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
