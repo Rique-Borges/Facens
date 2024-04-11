@@ -1,0 +1,19 @@
+#buyButton{
+    margin-left: 25%;
+    margin-bottom: 15%;
+}
+#preco{
+    margin-left:25%;
+    margin-top: 10%;
+}
+label{
+    margin-left: 25%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+img#pagseguro-12x{
+    margin-top: 10%;
+}
+#galeria, #youtubeEmbed{
+    margin-top: 20px;
+}

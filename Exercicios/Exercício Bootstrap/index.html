@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-12"><h1>1964 Fender Stratocaster 2 tons Sunburst Refin</h1></div>
+      <div class="row">
+        <div class="col-3">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.ebayimg.com/images/g/AfQAAOSwNXFl~bu0/s-l960.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ebayimg.com/images/g/LaoAAOSwUPll~bu2/s-l960.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ebayimg.com/images/g/9jcAAOSwZj9l~bu2/s-l960.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ebayimg.com/images/g/4rgAAOSwVM5l~bu3/s-l960.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="row-8">
+            <div class="card">
+              <h5 class="card-header bg-primary" style="color: white;">Descrição do Item</h5>
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://www.ebay.com/str/swinsdealsandsteals?_trksid=p4429486.m3561.l161211" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Swin's Deals and Steals</a></h5>
+                <p class="card-text">Tô vendendo uma Fender Stratocaster de 1964 sensacional, com uma pintura antiga de duas tonalidades estilo Sunburst, mas só a parte externa foi repintada. A pintura tá linda e tem aquele desgaste honesto de anos. Se liga, se não fosse pela repintura, podia jurar que era original. Essa belezinha dos primórdios de 64 tem a data do braço marcada de 2 de março de 64, escala de pau-rosa brasileiro com marcações em clay, logo do headstock estilo "espaguete", placa serial começando com L, escudo original verde menta, tarraxas originais duplas da Kluson, potenciômetros originais datados de 63/64 e as pickups originais de bobina preta têm o carimbo de tinta amarela de MAIO de 1964. A guitarra ainda tem as cavidades originais do corpo, acabamento do braço e foi reescalopada. Tem a marca "CAR 67" esculpida embaixo do escudo, indicando que pode ter voltado para a Fender em algum momento e talvez tenha sido repintada em Candy Apple Red. É uma Strat vintage muito massa, perfeita pra quem quer tocar, com uma vibe incrível! Feita uma regulagem profissional aqui e inclui a case original. Peso: 7 libras e 14 onças.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 justify-content-center">
+              <label for="quantidade">Escolha a quantidade:</label>
+                <select id="quantidade" disabled>
+                  <option value="1" selected>1</option>
+                </select>
+              <div id="buyButton"><button type="button" class="btn btn-danger btn-lg">Compre Agora  <i class="bi bi-cart3" style="color: white;"></i></button></div>
+            </div>
+            <div class="col-4 align-content-top">
+                  <h4 id="preco">R$ 108.140,99</h4>
+            </div>
+            <div class="col-4">
+              <img id="pagseguro-12x" src="https://cursosoperadorempilhadeira.com.br/wp-content/uploads/2018/12/pagseguro-12x.png" width="300px">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane" type="button" role="tab" aria-controls="video-tab-pane" aria-selected="true">Vídeo</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="fotos-tab" data-bs-toggle="tab" data-bs-target="#fotos-tab-pane" type="button" role="tab" aria-controls="fotos-tab-pane" aria-selected="false">Imagens</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="comentarios-tab" data-bs-toggle="tab" data-bs-target="#comentarios-tab-pane" type="button" role="tab" aria-controls="comentarios-tab-pane" aria-selected="false">Comentários</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
+              <div class="d-flex justify-content-center" id="youtubeEmbed"><iframe width="560" height="315" src="https://www.youtube.com/embed/plRYWbw2uc8?si=4VlrboKJrauM9kIX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
+            <div class="tab-pane fade" id="fotos-tab-pane" role="tabpanel" aria-labelledby="fotos-tab" tabindex="0">
+              <div class="d-flex justify-content-around" id="galeria">
+                <img src="https://i.ebayimg.com/images/g/AfQAAOSwNXFl~bu0/s-l960.jpg" class="img-thumbnail" width="300px" alt="..."> 
+                <img src="https://i.ebayimg.com/images/g/LaoAAOSwUPll~bu2/s-l960.jpg" class="img-thumbnail" width="300px" alt="..."> 
+                <img src="https://i.ebayimg.com/images/g/9jcAAOSwZj9l~bu2/s-l960.jpg" class="img-thumbnail" width="300px" alt="..."> 
+                <img src="https://i.ebayimg.com/images/g/4rgAAOSwVM5l~bu3/s-l960.jpg" class="img-thumbnail" width="300px" alt="..."> 
+                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="comentarios-tab-pane" role="tabpanel" aria-labelledby="comentarios-tab" tabindex="0">
+              <h3 class="text-secondary">Hum... não tem nenhum comentário aqui...</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
