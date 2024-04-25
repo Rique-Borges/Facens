@@ -272,7 +272,7 @@
           parseFloat(custoFabrica) +
           parseFloat(custoFabrica) * (parseFloat(percDistribuidor) / 100) +
           parseFloat(custoFabrica) * (parseFloat(percImpostos) / 100);
-        document.getElementById("valorFinal").innerHTML = valorFinal;
+        document.getElementById("valorFinal").innerHTML = valorFinal.toFixed(2);
       }
 
       adicionar();
