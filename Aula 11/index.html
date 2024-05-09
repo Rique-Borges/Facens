@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <label for="" class="label-control">Convidado</label>
+          <input type="text" class="form-control" id="Convidado" />
+        </div>
+        <div class="col-md-2">
+          <button onclick="adicionar()" class="btn btn-primary mt-4">
+            Adicionar
+          </button>
+          <button class="btn bt-danger" onclick="limpar()">Limpar</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Convidados adicionados:</h2>
+          <ul id="ulConvidado"></ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      var convidados = [];
+      function limpar() {
+        convidados = [];
+        document.getElementById("convidado").innerHTML = " ";
+      }
+      function adicionar() {
+        let convidado = document.getElementById("convidado").value;
+        if (convidado != "") {
+          convidados.push(convidado).value = "";
+          document.getElementById("convidado").value = "";
+          console.log(convidados);
+
+          let ul = document.getElementById("ulConvidado");
+          let li = document.createElement("li");
+          let btn = document.createElement("button");
+          btn.classList.add("btn", "btn-danger", "btn-sm");
+          btn.innerHTML = "Remover";
+          li.innerHTML = convidado;
+          btn.addEventListener("click", function () {
+            let index = convidados.indexOf(convidado);
+            convidados.splice(index, 1);
+            ul.removeChild(li);
+          });
+          li.appendChild(btn);
+          ul.appendchild(li);
+        }
+      }
+    </script>
+  </body>
+</html>
