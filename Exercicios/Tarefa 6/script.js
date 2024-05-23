@@ -1,11 +1,21 @@
 let pessoas = [];
+let proximoId = 1; // Inicializa o próximo ID como 1
+
+function encontrarProximoIdDisponivel() {
+  let ids = pessoas.map(pessoa => pessoa.id);
+  while (ids.includes(proximoId)) { 
+    proximoId++; 
+  }
+  return proximoId;
+}
 
 function salvarPessoa() {
   const nome = document.getElementById('nome').value;
   const email = document.getElementById('email').value;
   const telefone = document.getElementById('telefone').value;
 
-  const pessoa = { nome, email, telefone };
+  const id = encontrarProximoIdDisponivel(); 
+  const pessoa = { id, nome, email, telefone };
   pessoas.push(pessoa);
 
   atualizarTabela();
@@ -42,7 +52,7 @@ function atualizarTabela() {
 
   pessoas.forEach(function(pessoa) {
     const tr = document.createElement('tr');
-    
+
     const tdNome = document.createElement('td');
     tdNome.textContent = pessoa.nome;
     tr.appendChild(tdNome);
